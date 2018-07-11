@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>听力</title>
+</head>
+<body>
+    <h1 style="text-align:center">听力</h1>
+    {%for name in firname%}
+    <h2 style="text-align:center">{{name}}</h2>
+    <audio style="width:100%" controls>
+        <source  src="../static/mp/{{name}}" type="audio/mpeg">
+      </audio>
+    {%endfor%}
+</body>
+</html>
