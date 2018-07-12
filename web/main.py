@@ -3,7 +3,7 @@ from flask import render_template
 from flask import request
 import os
 app=flask(__name__)
-@app.route('/')
+@app.route('/'，methods=['GET','POST'])
 def main():
     firname=os.listdir('static/mp')
     return render_template('main.html',firname=firname)
